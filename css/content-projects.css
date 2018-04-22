@@ -1,0 +1,149 @@
+/*styling for the content of investor view*/
+/*INV SECTION*/
+html {
+    font-size: 16px;
+} 
+
+@media only screen and (max-width: 992px) {
+    /* For mobile phones: */
+        
+}
+
+
+.section-header {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+/* Flexbox section*/
+* {
+  box-sizing: border-box;
+}
+
+.grid {
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  flex: 0 1 auto;
+  max-width: 1280px;
+  margin: 0 auto;
+
+}
+
+.entry {
+    border-color: green;
+    border-style: none;
+    box-sizing: border-box;
+    flex: 33% 33% auto;
+    flex-basis: 33%;
+    max-width: 33%;
+    max-height: 33%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 2rem;
+    
+
+    padding: 1rem;
+    padding-bottom: 5rem;
+}
+
+.box {
+    border-color: blue;
+    border-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    max-height: 12rem;
+    max-width: 16rem;
+    padding: 5px;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.5rem;
+}
+
+.placeholder {
+    max-width:32%;
+    max-height:50%;
+    object-fit: contain;
+    max-height: 1rem;
+
+}
+
+.photo{
+    overflow: hidden;
+    position: relative;
+    max-height: 8rem;
+    max-width: 100%;
+}
+
+.image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    width: 100%;
+
+
+}
+
+.titles{
+    margin-top: 1rem;
+    padding-top: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%
+    width: 100%;
+    font-size: 1.2rem;
+    border-top: 1px solid #aaa;
+    color: #444;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+a:hover .titles { 
+    text-decoration: none;
+    color: #aaa;
+}
+
+
+@media (max-width: 992px) {
+    .titles{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 500px) {
+  .grid {
+    
+  }
+
+.photo{
+    max-height: 5rem;
+}
+
+  .entry {
+    width: 100%;
+    margin: 0 0 10px 0;
+    padding-bottom:6rem;
+
+    flex: 45% 45% auto;
+    flex-basis: 45%;
+    max-width: 45%;
+    max-height: 45%;
+
+    font-size: .8rem;
+  }
+
+  h4 {
+    margin-bottom: 2rem;
+  }
+}
+
+h4 {
+    padding-bottom: 2rem;
+}

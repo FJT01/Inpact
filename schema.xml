@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<database name="default" defaultIdMethod="native" defaultPhpNamingMethod="underscore">
+  <table name="investors" idMethod="native" phpName="Investors">
+    <column name="fname" phpName="Fname" type="VARCHAR" size="20" required="true"/>
+    <column name="lname" phpName="Lname" type="VARCHAR" size="20" required="true"/>
+    <column name="url" phpName="Url" type="VARCHAR" size="255" required="true"/>
+    <column name="id" phpName="Id" type="INTEGER" size="8" primaryKey="true" autoIncrement="true" required="true"/>
+    <vendor type="mysql">
+      <parameter name="Engine" value="InnoDB"/>
+    </vendor>
+  </table>
+</database>

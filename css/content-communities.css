@@ -1,0 +1,183 @@
+/*styling for the content of community view*/
+/*COMM SECTION*/
+html {
+    font-size: 16px;
+} 
+
+.section-header {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  flex-flow: wrap;
+  flex: 0 1 auto;
+  max-width: 95%;
+  margin: 0 auto;
+
+}
+
+.entry {
+    box-sizing: border-box;
+    flex-basis: 100%;
+    max-width: 95%;
+    max-height: 95%;
+    padding: 1rem;
+    padding-bottom:3rem;
+}
+
+.box {
+    padding: .3rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0rem;
+    max-width: 99%;
+    max-height: 99%;     
+}
+
+#wrapper {
+  display: flex;
+  max-width: 99%;
+  max-height: 99%;
+  
+}
+
+.photo{
+    overflow: hidden;
+     max-width: 20.3rem;
+    max-height: 15.625rem;
+    margin-right: 1rem;
+
+}
+
+.image{
+    width: 85%;
+}
+
+#left {
+  /* flex: 0 0 65%; */
+  /*display: inline-flex;*/
+  vertical-align: top
+}
+
+.titles{
+    font-size: 1rem;
+    color: #444;
+    width: 75%;
+    margin-top:-.24rem;
+}
+
+.subtitle {
+    font-size: .9rem;
+}
+
+.date {
+    font-size: .8rem;
+}
+
+.description {
+    padding-top: 1rem;
+    font-size: .8rem;
+    /*display: block;*/
+}
+
+#right {
+  /* flex: 1; */
+ /* display: inline-flex;*/
+  vertical-align: top
+}
+
+.past {
+	font-size: 1.25rem;
+	margin-bottom:2rem;
+	margin-left: auto;
+	margin-right:auto;
+}
+
+.past:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+.past-button {
+	background-color: white;
+	color: black;
+
+}
+
+
+a:hover{
+    text-decoration: none;
+}
+
+a:hover .titles { 
+    text-decoration: none;
+    color: #aaa;
+}
+
+
+
+@media (max-width: 992px) {
+    .titles{
+        font-size: 1rem;
+    }
+
+    .entry {
+    margin: 0 0 10px 0;
+    font-size: 2rem;
+  }
+
+  h4 {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 767px) {
+    #wrapper{
+        display: block;
+    }
+
+    .titles {
+        padding-top: 1rem;
+        width: 99%;
+
+
+    }
+
+    .photo{
+        max-width: 100%;
+        max-height: 70%rem;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+.photo{
+    max-width: 100%;
+}
+
+  .entry {
+    width: 100%;
+    margin: 0 0 10px 0;
+    padding-bottom:1.5rem;
+
+    font-size: 2rem;
+  }
+
+  h4 {
+    margin-bottom: 1rem;
+  }
+}
+
+h4 {
+    padding-bottom: 0rem;
+}
+
+
+

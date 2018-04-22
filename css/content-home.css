@@ -1,0 +1,227 @@
+/*styling for the nav bar for the most part,
+also for flex carousel*/
+/*NAVBAR SECTION*/
+html {
+    font-size: 16px;
+} 
+
+body{
+    height:100%;
+}
+
+.flexslider{
+    height: auto;
+    width: 100%;
+}
+
+.slides {
+    height: 500px;
+    width: 100%;
+}
+
+.flexslider .slides img {
+    max-width: 100%;
+    height: auto;
+    width:100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin: auto;
+
+    position:absolute;
+    top: -3rem;
+}
+
+/*hide border*/
+.bg-light {
+  border: 0px solid rgba(100, 100, 100, 0.1);
+}
+
+/*increase navbar text size, 
+remove bottom padding from navbar
+add some [adding to the top*/
+.navbar {
+    font-size: 1.0rem;
+    padding-bottom: 0.0rem;
+    padding-top: 3rem;
+}
+
+/*not used anymore because replaced brand text with image/logo */
+.navbar-brand {
+    font-size: 1.59375rem;
+    font-weight: normal;
+}
+
+/*used to see navbar margin for editing, otherwise unused */
+#nav-container{
+    margin: auto;
+    width: 100%;
+    border-style: none; /*change to dotted/none to /hide margin*/
+    padding-bottom:.5rem;
+}
+
+/* adds underline below navigation options */
+.navbar-nav {
+    border-bottom: 1px solid #aaa;
+}
+
+/*pads top and bottom of nav menu
+specificallly list and anchor children
+to push down menu and push border line down as well*/
+.navbar-nav  li  a {
+    padding-top:1.7rem !important; 
+    padding-bottom:1rem !important;
+}
+
+/* for mobile phones: */
+@media only screen and (max-width: 992px) {
+
+    [class*="col-"] {
+        
+    }
+
+    .navbar-nav {
+    border-bottom: 0px solid #aaa;
+    }
+
+    #nav-container{
+         padding-bottom:.8rem;
+    }
+
+    /* the main site border is hidden when the menu collapses
+    this adds another border only visible when the menu collapses*/
+    .bottom-border {
+        border-bottom: 1px solid #aaa;
+        padding-bottom: 0rem;
+        margin-bottom: .5rem;
+        max-width: 93%;
+        margin: 0 auto;
+    }
+
+     /*to make drop down icon level with logo.
+    if logo dimensions change this will probably have to change*/
+    .navbar-toggler, .navbar-toggler-icon, .collapse, .navbar-collapse {
+      /*might need to make a div to hold both the button and the collapse div
+      because the hamburger icon and its border refuse to stick together
+      although that might also include the expanding menu which would break it*/
+    }
+}
+
+/*fade animation for nav options*/
+a {
+    color: black;
+    transition: .5s;
+    -o-transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+}
+
+
+/*FLEXSLIDER SECTION*/
+
+.slider_header .flexslider .flex-control-paging li a {
+    border-radius: 0;
+}
+
+.slider_header .flexslider .flex-control-paging li a.flex-active {
+    background: #ff9f00;
+}
+
+/*style buttons*/
+.flex-control-paging li a {
+    width: 11px;
+    height: 11px;
+    display: block;
+    background: #666;
+    background: #ccccca;
+    cursor: pointer;
+    text-indent: -9999px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -o-border-radius: 20px;
+    border-radius: 20px;
+    border-radius: 0;
+}
+
+/*stle buttons hovered*/
+.flex-control-paging li a:hover {
+    background: #333;
+    background: #ccccca;
+}
+
+/*style the active flex button*/
+.flex-control-paging li a.flex-active {
+    background: #000;
+    background: #2b83c6;
+    cursor: default;
+}
+
+.slides{
+max-height: 400px;
+overflow: hidden;
+}
+
+/*hide slide arrows*/
+.flex-direction-nav a.flex-next, 
+.flex-direction-nav a.flex-prev{
+    display:none;
+}
+
+@media only screen and (max-width: 992px) {
+    /* For mobile phones: */
+        
+        .slides{
+    max-height: 220px;
+    overflow: hidden;
+    }
+}
+
+@media only screen and (min-width: 993px) {
+        
+    .flexslider .slides img {
+    top: -10rem;
+    }
+}
+
+@media only screen and (min-width: 1700px) {
+        
+    .flexslider .slides img {
+    top: -18rem;
+    }
+}
+
+
+
+.home-content{
+    margin: 1rem;
+}
+
+.title {
+font-size: 2.3rem;
+color: #333;
+text-transform: uppercase;
+}
+
+.subtitle{
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    color: #333;
+}
+
+.date{
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #333;
+}
+
+.flex-control-nav {
+    width: 100%;
+    position: absolute;
+    bottom: -2.4rem;
+    text-align: center;
+}
+
+.map{
+    background:transparent; 
+    width:100%; 
+}
